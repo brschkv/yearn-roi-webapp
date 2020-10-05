@@ -1,0 +1,12 @@
+# Local Dev stuff
+.idea
+data
+node_modules
+dist
+__pycache__
+
+# Env Files
+.env
+.env.*
+!.env.example
+

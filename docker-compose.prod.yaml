@@ -1,0 +1,18 @@
+version: '3.6'
+services:
+#  backend:
+#    ports:
+#      - '5000:5000'
+#    depends_on:
+#      - database
+  database:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: nimda
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./database/dev-db-mysql:/var/lib/mysql
+#  frontend:
+#    ports:
+#      - '8080:80'

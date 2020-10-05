@@ -1,0 +1,33 @@
+version: '3.6'
+services:
+  traefik:
+    image: traefik:v2.2
+
+  frontend:
+    build:
+      context: ./frontend
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.frontend.rule=Host(`localhost`)"
+
+  backend:
+    build:
+      context: ./backend
+    environment:
+      - DB_PROTOCOL=${DB_PROTOCOL}
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_DATABASE=${DB_DATABASE}
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.backend.rule=Host(`localhost`)"
+      - "traefik.http.routers.backend.rule=PathPrefix(`/api/`)"
+    depends_on:
+      - database
+
+  database:
+    image: mysql:5.7
+    expose:
+      - 3306
