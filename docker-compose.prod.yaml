@@ -15,6 +15,7 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.frontend.rule=Host(`www.yearn-roi.xyz`)"
       - "traefik.http.routers.frontend.tls=true"
+      - 'traefik.http.routers.frontend.tls.domains[0].main=www.yearn-roi.xyz'
       - "traefik.http.routers.frontend.tls.certresolver=letsencrypt"
 
   backend:
@@ -23,6 +24,7 @@ services:
       - "traefik.http.routers.backend.rule=Host(`www.yearn-roi.xyz`)"
       - "traefik.http.routers.backend.rule=PathPrefix(`/api/`)"
       - "traefik.http.routers.backend.tls=true"
+      - 'traefik.http.routers.backend.tls.domains[0].main=www.yearn-roi.xyz'
       - "traefik.http.routers.backend.tls.certresolver=letsencrypt"
 
   database:
