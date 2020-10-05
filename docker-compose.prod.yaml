@@ -26,6 +26,9 @@ services:
   database:
     image: mysql:5.7
     environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
       MYSQL_ROOT_PASSWORD: ${DB_ADMIN_PASSWORD}
     ports:
       - '3306:3306'
