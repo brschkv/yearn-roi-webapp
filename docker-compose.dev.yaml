@@ -8,9 +8,18 @@ services:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
       - "./traefik/traefik.dev.toml:/etc/traefik/traefik.toml"
 
+  frontend:
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.frontend.rule=Host(`yearn-roi.localhost`)"
+
   backend:
     ports:
       - '5000:5000'
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.backend.rule=Host(`yearn-roi.localhost`)"
+      - "traefik.http.routers.backend.rule=PathPrefix(`/api/`)"
 
   database:
     image: mysql:5.7
