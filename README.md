@@ -1,4 +1,4 @@
-# yearn ROI Calculator Webapp
+# yearn Vault ROI Calculator Webapp
 
 ## Start in Dev Mode
 ```bash

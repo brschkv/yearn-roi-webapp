@@ -1,8 +1,11 @@
 <template>
   <div class="container" id="app">
+    <div>
+      <h1>yearn Vault ROI Calculator</h1>
+    </div>
     <div id="nav">
       <router-link to="/">ROI</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/faq">F.A.Q.</router-link>
     </div>
     <router-view/>
     <div>
@@ -39,6 +42,6 @@ export default {
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #0065d0;
 }
 </style>

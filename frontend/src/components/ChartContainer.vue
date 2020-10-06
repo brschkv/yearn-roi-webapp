@@ -61,29 +61,29 @@ export default {
                 data: response.data.hpd_95_lower,
                 fill: false,
                 label: '95% HPD',
-                backgroundColor: 'rgba(233, 235, 103,0.5)',
-                borderColor: 'rgba(233, 235, 103, 0.5)'
+                backgroundColor: 'rgba(194, 196, 196,0.5)',
+                borderColor: 'rgba(194, 196, 196, 0.5)'
               },
               {
                 data: response.data.hpd_95_upper,
                 fill: +1,
                 label: 'hide',
-                backgroundColor: 'rgba(233, 235, 103,0.5)',
-                borderColor: 'rgba(233, 235, 103, 0.5)'
+                backgroundColor: 'rgba(194, 196, 196,0.5)',
+                borderColor: 'rgba(194, 196, 196, 0.5)'
               },
               {
                 data: response.data.hpd_50_lower,
                 fill: false,
                 label: '50% HPD',
-                backgroundColor: 'rgba(103, 235, 114,0.5)',
-                borderColor: 'rgba(103, 235, 114, 0.5)'
+                backgroundColor: 'rgba(115, 172, 228,0.5)',
+                borderColor: 'rgba(115, 172, 228, 0.5)'
               },
               {
                 data: response.data.hpd_50_upper,
                 fill: +3,
                 label: 'hide',
-                backgroundColor: 'rgba(103, 235, 114,0.5)',
-                borderColor: 'rgba(103, 235, 114, 0.5)'
+                backgroundColor: 'rgba(115, 172, 228,0.5)',
+                borderColor: 'rgba(115, 172, 228, 0.5)'
               }
             ]
           }
