@@ -38,10 +38,10 @@ export default {
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #0065d0;
 }
 
 #nav a.router-link-exact-active {
-  color: #0065d0;
+  color: #2c3e50;
 }
 </style>

@@ -60,7 +60,7 @@ export default {
               {
                 data: response.data.hpd_95_lower,
                 fill: false,
-                label: '95% HPD',
+                label: '95% Probability',
                 backgroundColor: 'rgba(194, 196, 196,0.5)',
                 borderColor: 'rgba(194, 196, 196, 0.5)'
               },
@@ -74,7 +74,7 @@ export default {
               {
                 data: response.data.hpd_50_lower,
                 fill: false,
-                label: '50% HPD',
+                label: '50% Probability',
                 backgroundColor: 'rgba(115, 172, 228,0.5)',
                 borderColor: 'rgba(115, 172, 228, 0.5)'
               },
