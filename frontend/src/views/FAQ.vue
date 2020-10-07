@@ -3,7 +3,7 @@
     <div>
       <h4>What am I looking at?</h4>
       <p>This is a try to model the future developments of the PricePerShare value of yearn vaults
-        by doing a bayesian estimation based on past price developments. For a more detailed discussion
+        by doing a bayesian estimation based on past price developments. For a more detailed description
         please refer to <a href="https://github.com/brschkv/yearn-roi-model/blob/master/DISCUSSION.md"> this
           discussion</a>.
         The model estimates prices of the next n days ("Horizon") based on the prices of the last m ("Based on last") days.
@@ -27,7 +27,7 @@
       <div>
         <h4>I have some cool ideas how to improve this. Are you open to that?</h4>
         <p>I strongly believe that good models and good apps are built by constantly
-          discussing them. If you have question or ideas to make any of these better,
+          discussing them. If you have ideas to make any of these better,
           or just a question, open up a github issue or drop me a mail at yearn-roi@protonmail.com
         </p>
       </div>
