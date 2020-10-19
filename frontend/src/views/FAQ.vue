@@ -8,8 +8,8 @@
           discussion</a>.
         The model estimates prices of the next n days ("Horizon") based on the prices of the last m ("Based on last") days.
         The short of it is this: According to the model(!!) there is a 50% chance that the future price at
-        a given date is within the blue area (This is called a 'HPD' in bayesian terms, hence the label in the graph).
-        And, according to the model(!!) there is a 95% chance that the future price is within the grey area.
+        a given date is within the blue area (This is called the 'Highest Posterior Density' or 'HPD' in bayesian terms).
+        And, according to the model(!!), there is a 95% chance that the future price is within the grey area.
       </p>
       <div>
         <h4>Is this financial advice?</h4>
